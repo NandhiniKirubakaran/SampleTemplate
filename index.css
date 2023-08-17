@@ -50,6 +50,10 @@ nav ul li a:hover::after{
 .carousel-inner{
     height: 500px;
 }
+.visually-hidden {
+    color: black;
+    font-weight: 600;
+}
 .carousel-item img{
     object-fit: cover;
     height: 500px;
