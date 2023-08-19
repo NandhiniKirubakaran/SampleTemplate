@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #0c0a0a;
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    padding: 20px;
+    background-color: rgb(59, 60, 60);
+}
+.edit-name{
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.edit-w-name{
+    width: 20%;
+}
+.edit-w-text{
+    width: 800px;
+}
+.edit-button{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+.edit-submit{
+    align-items: center;
+    text-align: center;
+}

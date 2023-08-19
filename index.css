@@ -26,6 +26,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 nav ul li a{
     color: #fff;
@@ -33,6 +34,7 @@ nav ul li a{
     font-size: medium;  
     position: relative;
     font-size: 20px;
+    
 }
 nav ul li a::after{
     content: '';
@@ -141,4 +143,33 @@ form.btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+.footer-section{
+    text-align: center;
+    background-color: #262626;
+    height: 120px;
+
+}
+.span-footer{
+  font-size: 20px;
+}
+.footer-icon a{ 
+    text-decoration: none;
+    font-size: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.footer-icon p{
+    padding: 0;
+    margin: 0;
+}
+.footer-icon a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+}
+.footer-copy{
+   padding-top: 20px; 
 }
