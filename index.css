@@ -56,9 +56,13 @@ nav ul li a:hover::after{
     color: black;
     font-weight: 600;
 }
+/* .carousel-inner{
+    align-items: center;
+} */
 .carousel-item img{
-    object-fit: cover;
     height: 500px;
+    margin: 0 auto;
+    width: 1180px;
 }
 .about-heading{
     padding-left: 100px;
@@ -77,7 +81,6 @@ nav ul li a:hover::after{
     padding-left: 100px;
     padding-top: 50px;
 }
-
 .row{
    padding: 0 100px 0 100px;
     display: grid;
@@ -87,6 +90,9 @@ nav ul li a:hover::after{
 .event-heading{
     padding-left: 100px;
     padding-top: 50px;
+}
+.card img{
+    aspect-ratio: 16/9;
 }
 .card-details{
     padding: 0 100px 0 100px;

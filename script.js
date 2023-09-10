@@ -6,7 +6,7 @@ window.onload = function() {
     var slider1 = document.getElementById('slider1');
     var slider2 = document.getElementById('slider2');
     var slider3 = document.getElementById('slider3');
-    var webname = document.getElementById('web-name');
+    var title = document.getElementById('title');
     var mail = document.getElementById('mail-id');
     var phone = document.getElementById('phone-num');
     var gallery1 = document.getElementById('gallery1');
@@ -26,7 +26,7 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     //console.log(data)
     slider2.src=data.slider2;
     slider3.src=data.slider3;
-    webname.innerHTML=data.name;
+    title.innerHTML=data.title;
     mail.innerHTML=data.mail;
     phone.innerHTML=data.phone;
     gallery1.src=data.gallery1;
