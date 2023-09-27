@@ -18,16 +18,16 @@ window.onload = function() {
     var gallery7 = document.getElementById('gallery7');
     var gallery8 = document.getElementById('gallery8');
 
-fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/examplecom.json`)
+fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/samplesite.json`)
 .then((value)=>value.json())
 .then((data)=>{
-    abouttext.innerHTML=data.about;
+    abouttext.innerHTML=data.about_us;
     slider1.src=data.slider1;
     //console.log(data)
     slider2.src=data.slider2;
     slider3.src=data.slider3;
     title.innerHTML=data.title;
-    mail.innerHTML=data.mail;
+    mail.innerHTML=data.mail_id;
     phone.innerHTML=data.phone;
     gallery1.src=data.gallery1;
     gallery2.src=data.gallery2;
