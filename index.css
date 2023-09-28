@@ -60,7 +60,7 @@ nav ul li a:hover::after{
     align-items: center;
 } */
 .carousel-item img{
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     width: 1180px;
 }
@@ -86,6 +86,7 @@ nav ul li a:hover::after{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-bottom: 50px;
 }
 .event-heading{
     padding-left: 100px;
@@ -153,7 +154,7 @@ form.btn2{
 .footer-section{
     text-align: center;
     background-color: #262626;
-    height: 120px;
+    height: 80px;
 
 }
 .span-footer{
