@@ -94,11 +94,14 @@ nav ul li a:hover::after{
     padding-left: 100px;
     padding-top: 50px;
 }
-
 .card img{
   width: 333px;
   height: 300px;
-    object-fit: cover; 
+object-fit: cover; 
+border-radius: 20px;
+}
+.card{
+    background-color: black;
 }
 .card-details{
     padding: 0 100px 0 100px;
