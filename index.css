@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 .row{
    padding: 0 100px 0 100px;
     display: grid;
-    gap: 30px;
+    gap: 35px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 50px;
     
