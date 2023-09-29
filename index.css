@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #0c0a0a;
+    background: black;
     color: #fff;
 }
     .container{
@@ -60,9 +60,10 @@ nav ul li a:hover::after{
     align-items: center;
 } */
 .carousel-item img{
-    height: 600px;
     margin: 0 auto;
-    width: 1180px;
+    object-fit: cover;
+    height:600px;
+    width: 1680px;
 }
 .about-heading{
     padding-left: 100px;
@@ -87,13 +88,17 @@ nav ul li a:hover::after{
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 50px;
+    
 }
 .event-heading{
     padding-left: 100px;
     padding-top: 50px;
 }
+
 .card img{
-    aspect-ratio: 16/9;
+  width: 333px;
+  height: 300px;
+   object-fit: cover; 
 }
 .card-details{
     padding: 0 100px 0 100px;
