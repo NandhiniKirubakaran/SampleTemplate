@@ -94,6 +94,14 @@ nav ul li a:hover::after{
     padding-left: 100px;
     padding-top: 50px;
 }
+.event-box{
+    width: 18rem;
+    color: black; 
+    margin: 0 100px 20px 100px; 
+    object-fit: cover; 
+    background-color: white; 
+    
+}
 .card img{
   width: 333px;
   height: 300px;
@@ -199,3 +207,109 @@ form.btn2{
     padding-left: 100px;
     padding-top: 50px;
 }
+
+@media (max-width: 481px) {
+    .container {
+    height: 150px;
+    width: 350px;
+    padding: 0;
+    }
+    .container nav ul li a{
+    font-size: small;
+    padding: 0;
+    }
+    #title {
+        margin: 0 auto;
+       padding-right: 40px;
+    }
+
+    #carousel {
+        height: 250px;
+        width: 350px;
+    }
+    .carousel-item img {
+        height: 250px;
+        width: 350px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }   
+    .carousel-control-prev {
+        width: 0px;
+    } 
+    .carousel-control-next {
+        width: 0px;
+    } 
+
+    #about {
+        font-size: small;
+    }
+    .about-para {
+      padding: 0 10px;
+      max-width: 340px;
+    }
+    .event-heading {
+        padding: 0;
+        max-width: 340px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .about-heading {
+        font-size: 25px;
+    }
+    .event-container {
+        max-width: 340px;
+        padding-right: 10px;
+        margin: 0;
+    }
+    .event-box {
+      margin: 0 auto;
+    }
+    .box-title {
+        font-size: medium;
+    }
+    .card-text {
+        font-size: small;
+    }
+    .gallery-heading {
+        font-size: 25px;
+    }
+    .row {
+        max-width: 340px;
+        padding: 0px;
+    }
+    .col{
+       max-width: 340px;
+       padding-right: 0;
+    }
+    .card img{
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .services-title {
+        font-size: 25px;
+    }
+    #services .row .col .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #contact .container .row {
+        max-width: 340px;
+       font-size: small;
+       text-align: center;
+    }
+    .sub-title {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .social-icons {
+        size: 10px;
+        margin-top: 0;
+    }
+    .contact-right{
+        max-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+}   
