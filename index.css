@@ -259,6 +259,7 @@ form.btn2{
     }
     .event-heading {
         padding: 0;
+        padding-top: 30px;
         max-width: 340px;
         text-align: center;
         font-size: 25px;
@@ -327,6 +328,10 @@ form.btn2{
         margin: 0 auto;
         padding-bottom: 10px;
     }
+        #hls-example {
+            height: 250px;
+            width: 350px;
+        }
     
 }   
 
