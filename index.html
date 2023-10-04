@@ -11,6 +11,14 @@
     <link href="index.css" rel="stylesheet">
     <script src="script.js"></script>
     
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <!-- <link href="css/style.css" rel="stylesheet" /> -->
+  <!-- responsive style -->
+  <!-- <link href="css/responsive.css" rel="stylesheet" /> -->
+  <link href="index.css" rel="stylesheet">
 
 </head>
 <body>
@@ -27,8 +35,54 @@
                  <li><a href="#contact">Enquiry</a></li>
              </ul>
          </nav>
+
+         <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+          <div id="myNav" class="overlay">
+            <div class="overlay-content">
+              <a href="">About</a>
+              <a href="">Gallery</a>
+              <a href="">Events</a>
+              <a href="">Contacts</a>
+              <a href="">Enquiry</a>
+            </div>
+          </div>
         </div> 
-     </div>
+        <!-- <div class="container-fluid"  >
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+                <span id="title" style="color: rgb(137, 6, 56);" >
+                Website Name
+                </span>
+            </a>
+            <div class="" id="">
+    
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+                <div id="myNav" class="overlay">
+                  <div class="overlay-content">
+                    <a href="index.html">About</a>
+                    <a href="index.html">Gallery</a>
+                    <a href="index.html">Events</a>
+                    <a href="index.html">Contacts</a>
+                    <a href="index.html">Enquiry</a>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </nav>
+        </div>
+     </div> -->
+     
 <!-- ---------------------------Slide-------------------------------- -->
 <!-- <div id="carousel">
   <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -253,5 +307,13 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
 </body>
 </html>
