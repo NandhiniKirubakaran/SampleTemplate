@@ -3,9 +3,9 @@
 window.onload = function() {
     var abouttext = document.getElementById('about-section');
     //console.log(abouttext);
-    // var slider1 = document.getElementById('slider1');
-    // var slider2 = document.getElementById('slider2');
-    // var slider3 = document.getElementById('slider3');
+    var slider1 = document.getElementById('slider1');
+    var slider2 = document.getElementById('slider2');
+    var slider3 = document.getElementById('slider3');
     var title = document.getElementById('title');
     var mail = document.getElementById('mail-id');
     var phone = document.getElementById('phone-num');
@@ -22,10 +22,10 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 .then((value)=>value.json())
 .then((data)=>{
     abouttext.innerHTML=data.about_us;
-    // slider1.src=data.slider1;
+    slider1.src=data.slider1;
     //console.log(data)
-    // slider2.src=data.slider2;
-    // slider3.src=data.slider3;
+    slider2.src=data.slider2;
+    slider3.src=data.slider3;
     title.innerHTML=data.title;
     mail.innerHTML=data.mail_id;
     phone.innerHTML=data.phone;
@@ -40,6 +40,5 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 
 })
 }
-
 
 
