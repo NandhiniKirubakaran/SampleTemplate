@@ -18,7 +18,7 @@ window.onload = function() {
     var gallery7 = document.getElementById('gallery7');
     var gallery8 = document.getElementById('gallery8');
 
-fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/samplesite.json`)
+fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/effervescent-snickerdoodle-fe8556netlifyapp.json`)
 .then((value)=>value.json())
 .then((data)=>{
     abouttext.innerHTML=data.about_us;
