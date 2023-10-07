@@ -31,7 +31,7 @@
   <script>
     // JavaScript to get deployed URL and format it
     const deployedURL = window.location.href;
-    const formattedURL = deployedURL.replace(/\./g, ' ').replace(/^https?:\/\//, '');
+    const formattedURL = deployedURL.replace(/\./g, ' ').replace(/^https?:\/\//, '').remove(  );
 
     // Display the formatted URL in a specific HTML element
     const formattedURLElement = document.getElementById('formattedURL');
