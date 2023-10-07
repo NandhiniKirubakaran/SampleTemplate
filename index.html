@@ -27,7 +27,19 @@
 
 </head>
 <body>
-  <p id="result"></p>
+  <!-- <p id="result"></p> -->
+
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+      loaderWrapper.style.display = 'none';
+  });
+</script>
+
   <script>
     // Get the deployed URL
     const deployedURL = window.location.href;
