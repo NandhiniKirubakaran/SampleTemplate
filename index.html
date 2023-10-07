@@ -28,7 +28,7 @@
 </head>
 <body>
   <div id="formattedURL"></div>
-  <script>
+  <!-- <script>
     // JavaScript to get deployed URL and format it
     const deployedURL = window.location.href;
     const formattedURL = deployedURL.replace(/\./g, ' ');
@@ -37,7 +37,25 @@
     const formattedURLElement = document.getElementById('formattedURL');
     formattedURLElement.textContent = formattedURL;
   </script>
-  
+   -->
+   <script>
+    // Get the deployed URL
+    const deployedURL = window.location.href;
+
+    // Extract the hostname (website name)
+    const hostname = window.location.hostname;
+
+    // Remove dots, spaces, and extra letters without the website name
+    const formattedURL = deployedURL
+        .replace(hostname, '') // Remove the hostname
+        .replace(/[^\w\s]/g, '') // Remove dots and non-alphanumeric characters
+        .replace(/\s+/g, ' ') // Remove extra spaces
+        .trim(); // Trim any leading or trailing spaces
+
+    // Display the formatted URL
+    document.getElementById('formattedURL').textContent = formattedURL;
+</script>
+
   <!-- ---------------------------Header-------------------------------- -->
     <div id="header">
         <div class="container">
