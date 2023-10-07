@@ -28,8 +28,10 @@
 </head>
 <body>
   <!-- <p id="result"></p> -->
-  
-  <div class="loader"></div>
+
+     <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
     
 
   <script>
@@ -43,7 +45,7 @@
     document.getElementById('result').textContent = cleanedURL;
 </script>
   
-
+<div class="content">
   <!-- ---------------------------Header-------------------------------- -->
     <div id="header">
         <div class="container">
@@ -257,7 +259,7 @@
   <!-- <p class="footer-copy"><span class="span-footer">&#169</span>Copyright. All rights reserved.</p>
 </footer> -->
 
-
+</div>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -291,7 +293,18 @@
   player.play();
   </script>
 
-  
+<script>
+  window.addEventListener('load', function () {
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+      const content = document.querySelector('.content');
+
+      // Hide the loader
+      loaderWrapper.style.display = 'none';
+      
+      // Show the content
+      content.style.visibility = 'visible';
+  });
+</script>
   
 </body>
 </html>
