@@ -106,7 +106,7 @@
 </div>
 
 <!-- ---------------------------Video-------------------------------- -->
-<div class="video-container" style="padding-top: 20px;">
+<div id="video-container" style="padding-top: 20px;">
   <video id='hls-example'  class="video-js vjs-default-skin" width="600" height="400" controls
   style="margin: 0 auto;  ">
     <source type="application/x-mpegURL" src="https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8">
@@ -305,7 +305,19 @@
       content.style.visibility = 'visible';
   });
 </script>
+<!-- ---------------------------------------------------------- -->
+<script>
+  // Boolean value
+  const showVideo = true; // Set this to true or false based on your condition
+
+  // Get the video container element
+  const videoContainer = document.getElementById('video-container');
+
+  // Check the boolean value and hide/show the video accordingly
+  if (!showVideo) {
+      videoContainer.style.display = 'none'; // Hide the video container
+  }
+</script>
   
 </body>
 </html>
-<!-- https://console.firebase.google.com/project/live2-3af8b/storage/live2-3af8b.appspot.com/files -->
