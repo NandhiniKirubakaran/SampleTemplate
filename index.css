@@ -551,7 +551,7 @@ form.btn2{
         display: none;
     }
 }
-   
+   /*Loader*/
 .loader-wrapper {
     position: fixed;
     top: 0;
