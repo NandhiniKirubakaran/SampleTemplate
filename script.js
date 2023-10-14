@@ -17,6 +17,7 @@ window.onload = function() {
     var gallery6 = document.getElementById('gallery6');
     var gallery7 = document.getElementById('gallery7');
     var gallery8 = document.getElementById('gallery8');
+    var icon = document.getElementById('icon-image');
 
 fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/effervescent-snickerdoodle-fe8556netlifyapp.json`)
 .then((value)=>value.json())
@@ -37,8 +38,9 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     gallery6.src=data.gallery6;
     gallery7.src=data.gallery7;
     gallery8.src=data.gallery8;
-
+    icon.src=data.icon;
 })
 }
 
 
+ 
