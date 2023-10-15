@@ -27,7 +27,7 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     //console.log(data)
     slider2.src=data.slider2;
     slider3.src=data.slider3;
-    title.innerHTML=data.title;
+    title.src=data.title;
     mail.innerHTML=data.mail_id;
     phone.innerHTML=data.phone;
     gallery1.src=data.gallery1;
@@ -38,7 +38,7 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     gallery6.src=data.gallery6;
     gallery7.src=data.gallery7;
     gallery8.src=data.gallery8;
-    icon.src=data.icon;
+    icon.className=data.icon;
 })
 }
 
