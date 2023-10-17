@@ -17,10 +17,10 @@ window.onload = function() {
     var gallery6 = document.getElementById('gallery6');
     var gallery7 = document.getElementById('gallery7');
     var gallery8 = document.getElementById('gallery8');
-    var icon = document.getElementById('icon-image');
-    var icon1 = document.getElementById('icon-image1');
-    var icon2 = document.getElementById('icon-image2');
-    var icon3 = document.getElementById('icon-image3');
+    var icon = document.getElementById('icon');
+    var icon1 = document.getElementById('icon1');
+    var icon2 = document.getElementById('icon2');
+    var icon3 = document.getElementById('icon3');
 
 fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/effervescent-snickerdoodle-fe8556netlifyapp.json`)
 .then((value)=>value.json())
@@ -41,10 +41,10 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     gallery6.src=data.gallery6;
     gallery7.src=data.gallery7;
     gallery8.src=data.gallery8;
-    icon.src=data.icon;
-    icon1.src=data.icon1;
-    icon2.src=data.icon2;
-    icon3.src=data.icon3;
+    icon.className=data.icon;
+    icon1.className=data.icon1;
+    icon2.className=data.icon2;
+    icon3.className=data.icon3;
 })
 }
 
