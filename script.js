@@ -31,7 +31,7 @@ window.onload = function() {
     // Display only the website name (domain)
     // document.getElementById('result').textContent = cleanedURL;
 
-fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/${cleanedURL}.json`)
+fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/effervescent-snickerdoodle-fe8556netlifyapp.json`)
 .then((value)=>value.json())
 .then((data)=>{
     abouttext.innerHTML=data.about_us;
@@ -57,5 +57,20 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 })
 }
 
+// <---------------------------------------------------------------->
+function openImage() {
+  const imageContainer = document.querySelector(".image-container");
+  const overlay = document.getElementById("overlay");
 
- 
+  overlay.style.display = "block";
+  imageContainer.style.zIndex = "999"; // Bring the image container to the front
+}
+
+function closeImage() {
+  const imageContainer = document.querySelector(".image-container");
+  const overlay = document.getElementById("overlay");
+
+  overlay.style.display = "none";
+  imageContainer.style.zIndex = "0"; // Send the image container back
+}
+

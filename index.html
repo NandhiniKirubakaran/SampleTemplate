@@ -124,12 +124,16 @@
 </div>  
 
 <!-- ---------------------------Gallery-------------------------------- -->
+
 <div id="gallery" >
     <h3 class="gallery-heading">Gallery</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4" >
         <div class="col" >
           <div class="card" >
-            <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="myFunction(this);">
+              <div class="image-container">
+                <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="openImage()">
+              </div>
+              <div id="overlay" class="overlay" onclick="closeImage()"></div>
           </div>
         </div>
         <div class="col">
@@ -170,17 +174,6 @@
 </div>
 
 
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
 
 <!-- ---------------------------Services-------------------------------- -->
 <div id="services">
