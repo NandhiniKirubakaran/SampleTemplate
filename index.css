@@ -103,7 +103,7 @@ nav ul li a:hover::after{
     background-color: white; 
     
 }
-.card img{
+.image-container img{
   width: 333px;
   height: 300px;
 object-fit: cover; 
@@ -282,7 +282,7 @@ form.btn2{
     .box-title {
         font-size: medium;
     }
-    .card-text {
+    .service-text {
         font-size: small;
     }
     .gallery-heading {
@@ -300,14 +300,14 @@ form.btn2{
        max-width: 340px;
        padding: 0;
     }
-    .card img{
+    .image-container img{
         max-width: 280px;
         margin: 0 auto;
     }
-    .services-title {
+    .service-title {
         font-size: 25px;
     }
-    #services .row .col .card {
+    #service .row .col .service-container {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -671,8 +671,10 @@ form.btn2{
       width: 100%;
     }
   }
+ 
 
-/* body, html {
+
+  /* body, html {
     height: 100%;
     margin: 0;
 } */
@@ -685,13 +687,13 @@ form.btn2{
     align-items: center;
 }
 
-#gallery1 {
+/* #gallery1 {
     max-width: 100%;
     max-height: 100%;
     cursor: pointer;
-}
+} */
 
-.overlay {
+.expanded-image-container {
     display: none;
     position: fixed;
     top: 0;
@@ -699,5 +701,16 @@ form.btn2{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Background color when image expands */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#expanded-image {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+
 

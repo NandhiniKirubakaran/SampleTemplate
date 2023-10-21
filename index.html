@@ -129,48 +129,70 @@
     <h3 class="gallery-heading">Gallery</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4" >
         <div class="col" >
-          <div class="card" >
               <div class="image-container">
-                <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="openImage()">
+                <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="expandImage()">
               </div>
-              <div id="overlay" class="overlay" onclick="closeImage()"></div>
-          </div>
+              <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+                <img src="assests/studio-1.jpg" alt="Expanded Image" id="expanded-image">
+              </div>
         </div>
         <div class="col">
-          <div class="card">
-            <img src="" class="card-img-top" id="gallery2"  alt="...">
+          <div class="image-container">
+            <img src="" class="card-img-top"  id="gallery2" alt="..." onclick="expandImage()">
           </div>
+          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+            <img src="assests/studio-2.jpg" alt="Expanded Image" id="expanded-image">
+          </div> -->
         </div>
         <div class="col">
-          <div class="card">
-            <img src="" class="card-img-top" id="gallery3"  alt="...">
+          <div class="image-container">
+            <img src="" class="card-img-top"  id="gallery3" alt="..." onclick="expandImage()">
           </div>
+          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+            <img src="assests/studio-3.jpg" alt="Expanded Image" id="expanded-image">
+          </div> -->
         </div>
         <div class="col">
-          <div class="card">
-            <img src="" class="card-img-top" id="gallery4"  alt="...">
+          <div class="image-container">
+            <img src="" class="card-img-top"  id="gallery4" alt="..." onclick="expandImage()">
           </div>
+          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+            <img src="assests/studio-4.jpg" alt="Expanded Image" id="expanded-image">
+          </div> -->
       </div>
       <div class="col">
-        <div class="card">
-          <img src="" class="card-img-top" id="gallery5"  alt="...">
+        <div class="image-container">
+          <img src="" class="card-img-top"  id="gallery5" alt="..." onclick="expandImage()">
         </div>
+        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+          <img src="assests/studio-5.jpg" alt="Expanded Image" id="expanded-image">
+        </div> -->
     </div>
     <div class="col">
-        <div class="card">
-          <img src="" class="card-img-top"  id="gallery6"  alt="...">
+        <div class="image-container">
+          <img src="" class="card-img-top"  id="gallery6" alt="..." onclick="expandImage()">
         </div>
+        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+          <img src="assests/studio-6.jpg" alt="Expanded Image" id="expanded-image">
+        </div> -->
     </div>
     <div class="col">
-        <div class="card">
-          <img src="" class="card-img-top" id="gallery7"  alt="...">
+        <div class="image-container">
+          <img src="" class="card-img-top"  id="gallery7" alt="..." onclick="expandImage()">
         </div>
+        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+          <img src="assests/studio-7.jpg" alt="Expanded Image" id="expanded-image">
+        </div> -->
     </div>
     <div class="col">
-      <div class="card">
-        <img src="" class="card-img-top" id="gallery8"  alt="...">
+      <div class="image-container">
+        <img src="" class="card-img-top"  id="gallery8" alt="..." onclick="expandImage()">
       </div>
+      <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+        <img src="assests/studio-8.jpg" alt="Expanded Image" id="expanded-image">
+      </div>       -->
     </div>
+  </div>
 </div>
 
 
@@ -180,12 +202,12 @@
   <h3 class="service-title">Services</h3>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="card" style="color: black; text-align: center; height: 300px;width: 300px; border-radius: 50px; border-color: #ff004f; background-color: white;">
+      <div class="service-container" style="color: black; text-align: center; height: 300px;width: 300px; border-radius: 50px; border-color: #ff004f; background-color: white;">
         <h4 style="color: #ff004f; font-weight: 600; padding-top: 20px;">Weddings</h4>
-        <div class="card-body">
+        <div class="service-body">
           <!-- <img src="" id="icon-image" style="height: 60px; width: 80px;object-fit: cover;" alt=""> -->
           <i class="" id="icon" ></i>
-          <p class="card-text" style="font-size:small ;">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
+          <p class="service-text" style="font-size:small ;">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
           
         </div>
       </div>

@@ -58,19 +58,36 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 }
 
 // <---------------------------------------------------------------->
-function openImage() {
-  const imageContainer = document.querySelector(".image-container");
-  const overlay = document.getElementById("overlay");
+// function openImage() {
+//   const imageContainer = document.querySelector(".image-container");
+//   const overlay = document.getElementById("overlay");
 
-  overlay.style.display = "block";
-  imageContainer.style.zIndex = "999"; // Bring the image container to the front
+//   overlay.style.display = "block";
+//   imageContainer.style.zIndex = "999"; // Bring the image container to the front
+// }
+
+// function closeImage() {
+//   const imageContainer = document.querySelector(".image-container");
+//   const overlay = document.getElementById("overlay");
+
+//   overlay.style.display = "none";
+//   imageContainer.style.zIndex = "0"; // Send the image container back
+// }
+
+
+function expandImage() {
+  const imageContainer = document.querySelector(".image-container");
+  const expandedImageContainer = document.querySelector(".expanded-image-container");
+
+  imageContainer.style.display = "none";
+  expandedImageContainer.style.display = "flex";
 }
 
-function closeImage() {
+function closeExpandedImage() {
   const imageContainer = document.querySelector(".image-container");
-  const overlay = document.getElementById("overlay");
+  const expandedImageContainer = document.querySelector(".expanded-image-container");
 
-  overlay.style.display = "none";
-  imageContainer.style.zIndex = "0"; // Send the image container back
+  imageContainer.style.display = "flex";
+  expandedImageContainer.style.display = "none";
 }
 
