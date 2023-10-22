@@ -33,17 +33,6 @@
         <div class="loader"></div>
     </div>
     
-<!-- 
-  <script>
-    // Get the deployed URL
-    const deployedURL = window.location.href;
-
-    // Remove dots, extra spaces, and hostname from the URL
-    const cleanedURL = deployedURL.replace(/[.\s]+/g, '').replace(/^https?:\/\//, '').split('/')[0];
-
-    // Display only the website name (domain)
-    document.getElementById('result').textContent = cleanedURL;
-</script> -->
   
 <div class="content">
   <!-- ---------------------------Header-------------------------------- -->
@@ -130,67 +119,49 @@
     <div class="row row-cols-1 row-cols-md-3 g-4" >
         <div class="col" >
               <div class="image-container">
-                <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="expandImage()">
-              </div>
-              <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-                <img src="assests/studio-1.jpg" alt="Expanded Image" id="expanded-image">
+                <img src="" class="card-img-top"  id="gallery1" alt="..." onclick="expandImage('gallery1')">
               </div>
         </div>
         <div class="col">
           <div class="image-container">
-            <img src="" class="card-img-top"  id="gallery2" alt="..." onclick="expandImage()">
+            <img src="" class="card-img-top"  id="gallery2" alt="..." onclick="expandImage('gallery2')">
           </div>
-          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-            <img src="assests/studio-2.jpg" alt="Expanded Image" id="expanded-image">
-          </div> -->
         </div>
         <div class="col">
           <div class="image-container">
-            <img src="" class="card-img-top"  id="gallery3" alt="..." onclick="expandImage()">
+            <img src="" class="card-img-top"  id="gallery3" alt="..." onclick="expandImage('gallery3')">
           </div>
-          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-            <img src="assests/studio-3.jpg" alt="Expanded Image" id="expanded-image">
-          </div> -->
         </div>
         <div class="col">
           <div class="image-container">
-            <img src="" class="card-img-top"  id="gallery4" alt="..." onclick="expandImage()">
+            <img src="" class="card-img-top"  id="gallery4" alt="..." onclick="expandImage('gallery4')">
           </div>
-          <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-            <img src="assests/studio-4.jpg" alt="Expanded Image" id="expanded-image">
-          </div> -->
       </div>
       <div class="col">
         <div class="image-container">
-          <img src="" class="card-img-top"  id="gallery5" alt="..." onclick="expandImage()">
+          <img src="" class="card-img-top"  id="gallery5" alt="..." onclick="expandImage('gallery5')">
         </div>
-        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-          <img src="assests/studio-5.jpg" alt="Expanded Image" id="expanded-image">
-        </div> -->
     </div>
     <div class="col">
         <div class="image-container">
-          <img src="" class="card-img-top"  id="gallery6" alt="..." onclick="expandImage()">
+          <img src="" class="card-img-top"  id="gallery6" alt="..." onclick="expandImage('gallery6')">
         </div>
-        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-          <img src="assests/studio-6.jpg" alt="Expanded Image" id="expanded-image">
-        </div> -->
     </div>
     <div class="col">
         <div class="image-container">
-          <img src="" class="card-img-top"  id="gallery7" alt="..." onclick="expandImage()">
+          <img src="" class="card-img-top"  id="gallery7" alt="..." onclick="expandImage('gallery7')">
         </div>
-        <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-          <img src="assests/studio-7.jpg" alt="Expanded Image" id="expanded-image">
-        </div> -->
     </div>
     <div class="col">
       <div class="image-container">
-        <img src="" class="card-img-top"  id="gallery8" alt="..." onclick="expandImage()">
+        <img src="" class="card-img-top"  id="gallery8" alt="..." onclick="expandImage('gallery8')">
       </div>
-      <!-- <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
-        <img src="assests/studio-8.jpg" alt="Expanded Image" id="expanded-image">
-      </div>       -->
+    </div>
+    <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+      <img src="" alt="Expanded Image" id="expanded-image">
+      <button type="submit" class="close" style="right: 0px; position: absolute; outline: none;">
+        <span>&times;</span>
+      </button>
     </div>
   </div>
 </div>
@@ -202,12 +173,12 @@
   <h3 class="service-title">Services</h3>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="service-container" style="color: black; text-align: center; height: 300px;width: 300px; border-radius: 50px; border-color: #ff004f; background-color: white;">
+      <div class="card" style="color: black; text-align: center; height: 300px;width: 300px; border-radius: 50px; border-color: #ff004f; background-color: white;">
         <h4 style="color: #ff004f; font-weight: 600; padding-top: 20px;">Weddings</h4>
-        <div class="service-body">
+        <div class="card-body">
           <!-- <img src="" id="icon-image" style="height: 60px; width: 80px;object-fit: cover;" alt=""> -->
           <i class="" id="icon" ></i>
-          <p class="service-text" style="font-size:small ;">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
+          <p class="card-text" style="font-size:small ;">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
           
         </div>
       </div>
@@ -279,10 +250,6 @@
 </div>
 <!-- ---------------------------Footer-------------------------------- -->
 <footer class="footer-section">
-  <!-- <div class="footer-icon">
-    <a href="editwebsite.html" target="_blank"><i class="fa fa-pencil-square"></i></a>
-    <p><small> Click here for edit your own website</small> </p>
-  </div> -->
   <p class="footer-copy"><span class="span-footer">&#169</span>Copyright. All rights reserved.</p>
 </footer>
 
@@ -335,7 +302,7 @@
 <!-- ---------------------------------------------------------- -->
 <script>
   // Boolean value
-  const showVideo = true; // Set this to true or false based on your condition
+  const showVideo = false; // Set this to true or false based on your condition
 
   // Get the video container element
   const videoContainer = document.getElementById('video-container');
@@ -345,6 +312,7 @@
       videoContainer.style.display = 'none'; // Hide the video container
   }
 </script>
-  
+
+
 </body>
 </html>
