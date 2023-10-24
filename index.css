@@ -10,7 +10,7 @@ html{
 body{
     background: black;
     color: #fff;
-    
+    position: relative;
 }
 .container {
     padding: 0;
@@ -210,6 +210,16 @@ form.btn2{
     padding-top: 50px;
 }
 
+.service-container {
+  color: black; 
+  text-align: center; 
+  height: 300px;
+  width: 300px; 
+  border-radius: 50px; 
+  border-color: #ff004f; 
+  background-color: white;
+}
+
 @media (max-width: 481px) {
     .container {
     height: 150px;
@@ -307,7 +317,7 @@ form.btn2{
     .service-title {
         font-size: 25px;
     }
-    #services .row .col .card {
+    #services .row  .service-container {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -674,10 +684,10 @@ form.btn2{
  
 
 
-  /* body, html {
+  body, html {
     height: 100%;
     margin: 0;
-} */
+}
 
 .image-container {
     width: 100%;
@@ -704,12 +714,6 @@ form.btn2{
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    transition: rotate 2s;
-}
-.expanded-image-container:hover {
-  rotate: 360deg;
-  height: 100%;
-  width: 100%;
 }
 
 #expanded-image {
