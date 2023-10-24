@@ -157,10 +157,11 @@
         <img src="" class="card-img-top"  id="gallery8" alt="..." onclick="expandImage('gallery8')">
       </div>
     </div>
-    <div id="expanded-image-container" class="expanded-image-container" onclick="closeExpandedImage()">
+    <div id="expanded-image-container" class="expanded-image-container">
       <img src="" alt="Expanded Image" id="expanded-image">
-      <button type="submit" class="close" style="right: 0px; position: fixed; outline: none;">
+      <button type="submit" class="close" onclick="closeExpandedImage()" style="right: 30px; position: fixed; outline: none;color: white;">
         <span>&times;</span>
+        <h6 style="color: white;">Close</h6>
       </button>
     </div>
   </div>
