@@ -698,12 +698,6 @@ form.btn2{
     align-items: center;
 }
 
-/* #gallery1 {
-    max-width: 100%;
-    max-height: 100%;
-    cursor: pointer;
-} */
-
 .expanded-image-container {
     display: none;
     position: fixed;
