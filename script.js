@@ -58,22 +58,6 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 }
 
 // <---------------------------------------------------------------->
-// function openImage() {
-//   const imageContainer = document.querySelector(".image-container");
-//   const overlay = document.getElementById("overlay");
-
-//   overlay.style.display = "block";
-//   imageContainer.style.zIndex = "999"; // Bring the image container to the front
-// }
-
-// function closeImage() {
-//   const imageContainer = document.querySelector(".image-container");
-//   const overlay = document.getElementById("overlay");
-
-//   overlay.style.display = "none";
-//   imageContainer.style.zIndex = "0"; // Send the image container back
-// }
-
 
 function expandImage(name) {
   const imageContainer = document.querySelector(".image-container");
