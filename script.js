@@ -21,6 +21,14 @@ window.onload = function() {
     var icon1 = document.getElementById('icon1');
     var icon2 = document.getElementById('icon2');
     var icon3 = document.getElementById('icon3');
+    var heading = document.getElementById('heading');
+    var heading1 = document.getElementById('heading1');
+    var heading2 = document.getElementById('heading2');
+    var heading3 = document.getElementById('heading3');
+    var content = document.getElementById('content');
+    var content1 = document.getElementById('content1');
+    var content2 = document.getElementById('content2');
+    var content3 = document.getElementById('content3');
 
     // Get the deployed URL
     const deployedURL = window.location.href;
@@ -54,6 +62,14 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     icon1.className=data.icon1;
     icon2.className=data.icon2;
     icon3.className=data.icon3;
+    heading.innerHTML=data.service_heading;
+    heading1.innerHTML=data.service_heading1;
+    heading2.innerHTML=data.service_heading2;
+    heading3.innerHTML=data.service_heading3;
+    content.innerHTML=data.service_content;
+    content1.innerHTML=data.service_content1;
+    content2.innerHTML=data.service_content2;
+    content3.innerHTML=data.service_content3;
 })
 }
 
