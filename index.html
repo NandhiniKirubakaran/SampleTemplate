@@ -10,7 +10,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link href="index.css" rel="stylesheet">
     <script src="script.js"></script>
-    <!-- <script src="script1.js"></script> -->
     
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- font awesome style -->
@@ -24,6 +23,7 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
   <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/10.5.2/jquery.min.js"></script> -->
   
 
 </head>
@@ -240,6 +240,45 @@
 </footer>
 
 </div>
+
+<!-- --------------------------------------------------------------- -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+  
+  // Paste the code from Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyCz3nFN_E3CXCSUigKy5qtBbnGc4GiGSI8",
+    authDomain: "live2-3af8b.firebaseapp.com",
+    databaseURL: "https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "live2-3af8b",
+    storageBucket: "live2-3af8b.appspot.com",
+    messagingSenderId: "310056093070",
+    appId: "1:310056093070:web:0da53597c0f863587110df"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  
+  // Get a reference to the database service
+  const db = getDatabase(app);
+  
+  document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      set(ref(db, 'enquiries/' + Math.random().toString(36).slice(2, 7)), {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          message: document.getElementById('message').value
+      });
+  
+      alert('Your form is submitted');
+      document.getElementById('enquiry-form').reset();
+  });
+  </script>
+
+<!-- --------------------------------------------------------------- -->
+
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
